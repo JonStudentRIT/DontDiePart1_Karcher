@@ -111,14 +111,14 @@ namespace DontDiePart1
             // [origin] "direction", weight
             (string, int)[,] adjacencyMatrix =
             /*  *//*  A*//*       B*//*     C*//*       D*//*       E*//*       F*//*       G*//*        H*/
-            /*A*/{ {("NE", 0),  ("S", 2),  (null,-1),  (null,-1),  (null,-1),  (null,-1),  (null,-1),  (null,-1) },
-            /*B  */{(null,-1),  (null,-1),  ("S", 2),  ("E", 3),  (null,-1),  (null,-1),  (null,-1),  (null,-1) },
-            /*C  */{(null,-1),  ("N", 2),  (null,-1),  (null,-1),  (null,-1),  (null,-1),  (null,-1),  ("S",20) },
-            /*D  */{(null,-1),  ("W", 3),  ("S", 5),  (null,-1),  ("N", 2),  ("E", 4),  (null,-1),  (null,-1) },
-            /*E  */{(null,-1),  (null,-1),  (null,-1),  (null,-1),  (null,-1),  ("S", 3),  (null,-1),  (null,-1) },
-            /*F  */{(null,-1),  (null,-1),  (null,-1),  (null,-1),  (null,-1),  (null,-1),  ("", 1),  (null,-1) },
-            /*G  */{(null,-1),  (null,-1),  (null,-1),  (null,-1),  ("N", 0),  (null,-1),  (null,-1),  ("S", 2) },
-            /*H  */{(null,-1),  (null,-1),  (null,-1),  (null,-1), (null,-1),  (null,-1),  (null,-1),  (null,-1) } };
+            /*A*/{ {("NE", 0),  ("S", 2),  (null,-1), (null,-1),  (null,-1),  (null,-1),  (null,-1),  (null,-1) },
+            /*B  */{(null,-1),  (null,-1), ("S", 2),  ("E", 3),   (null,-1),  (null,-1),  (null,-1),  (null,-1) },
+            /*C  */{(null,-1),  ("N", 2),  (null,-1), (null,-1),  (null,-1),  (null,-1),  (null,-1),  ("S",20) },
+            /*D  */{(null,-1),  ("W", 3),  ("S", 5),  (null,-1),  ("N", 2),   ("E", 4),   (null,-1),  (null,-1) },
+            /*E  */{(null,-1),  (null,-1), (null,-1), (null,-1),  (null,-1),  ("S", 3),   (null,-1),  (null,-1) },
+            /*F  */{(null,-1),  (null,-1), (null,-1), (null,-1),  (null,-1),  (null,-1),  ("E", 1),    (null,-1) },
+            /*G  */{(null,-1),  (null,-1), (null,-1), (null,-1),  ("N", 0),   (null,-1),  (null,-1),  ("S", 2) },
+            /*H  */{(null,-1),  (null,-1), (null,-1), (null,-1),  (null,-1),  (null,-1),  (null,-1),  (null,-1) } };
 
             // Dont Die data in list form
             // [origin] destination, "direction", weight
